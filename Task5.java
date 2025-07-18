@@ -1,6 +1,7 @@
 /*AUTHOR:DIYA KRISHNA
  * DATE:18/7/2025
  */
+import java.util.Scanner;
 class Student{//class
 	String Name;
 	int Rollnumber;
@@ -19,8 +20,16 @@ class Student{//class
 }
 public class Task5 {
 	public static void main(String[] args) {
-		Student student1 =new Student("Diya krishna",33,"CSE");
+		Scanner scr = new Scanner(System.in);
+		String Name,Department;
+		int Rollnumber;
+		Name =scr.nextLine();
+		Rollnumber =scr.nextInt();
+		scr.nextLine();
+		Department =scr.nextLine();
+		Student student1 =new Student(Name,Rollnumber,Department);
 		student1.Studentinfo();
+		scr.close();
 	}
 }
 
