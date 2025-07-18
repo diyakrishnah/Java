@@ -18,7 +18,7 @@ class Book{
 		}
 public class Task4 {
 	public static void main(String[] args) {
-		Book books =new Book();
-		books.displaydetails();
+		Book book1 =new Book();
+		book1.displaydetails();
 	}
 }
